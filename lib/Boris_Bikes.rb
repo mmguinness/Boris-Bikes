@@ -4,6 +4,10 @@ class DockingStation
   def release_bike
     Bikes.new
   end
+
+  def condition_check
+    true
+  end
 end
 
 class Bikes
