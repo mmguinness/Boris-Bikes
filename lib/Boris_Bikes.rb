@@ -6,3 +6,10 @@ class DockingStation
 
 
 end
+
+class Bikes
+  def working?(condition)
+
+  end
+end
+
