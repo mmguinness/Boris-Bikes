@@ -25,7 +25,9 @@ describe DockingStation do
 
   describe "#check_availability" do
     it "allows user to see if a bike is available" do
+      bike_1 = Bikes.new("Bike 1")
       docking_station = DockingStation.new
+      docking_station.add_bike(bike_1)
       expect(docking_station.check_availability).to eq "Bike 1"
     end
   end
