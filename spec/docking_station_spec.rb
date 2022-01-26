@@ -8,10 +8,11 @@ describe DockingStation do
     end
   end
 
-  describe "condition_check" do
+  describe "#condition_check" do
     it "checks that the bike being release is working" do
       docking_station = DockingStation.new
-      expect(docking_station.release_bike).to respond_to(:working?) 
+      bike = docking_station.release_bike
+      expect(bike.working?).to eq true 
     end
   end
 end
