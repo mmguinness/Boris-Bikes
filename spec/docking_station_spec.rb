@@ -26,7 +26,7 @@ describe DockingStation do
   describe "#check_availability" do
     it "allows user to see if a bike is available" do
       docking_station = DockingStation.new
-      expect(docking_station).to respond_to(:check_availability)
+      expect(docking_station.check_availability).to eq "Bike 1"
     end
   end
 end
