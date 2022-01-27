@@ -4,7 +4,6 @@ class Bikes
   end
 
   def bike_details
-    p @bike_name
     @bike_name
   end
 
@@ -24,7 +23,6 @@ class DockingStation
 
   def add_bike(bike_name)
     @bike_list.push(bike_name)
-    p @bike_list
   end
 
   def check_availability
