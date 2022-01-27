@@ -16,10 +16,10 @@ describe DockingStation do
     end
   end
 
-  describe "#return_bike" do
+  describe "#add_bike" do
     it "allows bike to be returned to docking station" do
       docking_station = DockingStation.new
-      expect(docking_station).to respond_to(:return_bike)
+      expect(docking_station).to respond_to(:add_bike)
     end
   end
 
@@ -27,7 +27,7 @@ describe DockingStation do
     it "allows user to see if a bike is available" do
       bike_1 = Bikes.new("Bike 1")
       docking_station = DockingStation.new
-      docking_station.add_bike(bike_1)
+      docking_station.add_bike(bike_1.bike_details)
       expect(docking_station.check_availability).to eq "Bike 1"
     end
   end
